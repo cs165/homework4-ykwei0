@@ -1,3 +1,44 @@
 /*
 TODO(you): Write any additional styles you need here.
 */
+#music {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#gif-container {
+    flex-grow: 1;
+    position: relative;
+    background-color: gray;
+}
+
+#foreground, #background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#foreground {
+    z-index: 2;
+}
+#background {
+    z-index: 1;
+}
+
+
+#bottom {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#button {
+    height: 60px;
+    width: 60px;
+}
